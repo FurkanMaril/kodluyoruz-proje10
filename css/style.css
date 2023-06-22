@@ -1,0 +1,704 @@
+body{
+    background-color: #f3f2ef;
+    margin-top: 50px;
+}
+header{
+    background-color: #fff;
+    border-bottom: 1px solid #00000014;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    background-color: #fff !important;
+}
+header .navbar .navbar-brand{
+    padding: 0px;
+}
+header .navbar .nav-left{
+    display: flex;
+    align-items: center;
+}
+header .navbar .nav-left form input{
+    background-color: #eef3f8;
+    font-size: 14px;
+    border: none;
+}
+header .navbar .nav-left form input:focus{
+    box-shadow: none;
+}
+header .navbar .navbar-nav{
+    padding-top: 6px;
+    padding-right: 20px;
+    margin-right: 20px;
+    border-right: 1px solid #00000014;
+}
+header .navbar .nav-item{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 16px;
+}
+header .navbar .nav-item.active{
+    border-bottom: 2px solid #000;
+}
+header .navbar .nav-item .nav-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    padding: 3px;
+    cursor: pointer;
+}
+header .navbar .nav-item .nav-link i{
+    font-size: 16px;
+}
+header .navbar .nav-item .nav-link span{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+header .navbar .nav-item > i{
+    color: #00000099;
+}
+header .navbar .nav-item.active > i{
+    color: #000;
+}
+header .navbar .nav-item .nav-link img{
+    width: 24px;
+    height: 24px;
+}
+header .navbar .nav-right .btn-for-business{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: #00000080;
+}
+header .navbar .nav-right .btn-for-business span{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+header .navbar .nav-right .btn-for-business:hover{
+    color: #000;
+}
+header .navbar .nav-right .btn-premium{
+    text-decoration: underline;
+    text-align: center;
+    color: #915907;
+    font-size: 12px;
+    margin-left: 20px;
+    transition: 0.2s;
+}
+header .navbar .nav-right .btn-premium:hover{
+    color: #5d3b09;
+}
+
+.main{
+    padding-top: 24px;
+}
+.main .profile-box{
+    border: 1px solid #00000017;
+    background-color: #fff;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+.main .profile-box .profile-header-bg img{
+    border-radius: 12px 12px 0px 0px;;
+}
+.main .profile-box .profile-img{
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+    margin-bottom: 16px;
+}
+.main .profile-box .profile-img img{
+    border: 2px solid #fff;
+    border-radius: 50px;
+    width: 72px;
+    height: 72px;
+    z-index: 1;
+    margin-top: -36px;
+}
+.main .profile-box .profile-name{
+    color: #000000e6;
+    font-weight: 600;
+    text-align: center;
+    padding: 0px 8px 0px 8px;
+    width: 100%;
+    display: block;
+}
+.main .profile-box .profile-degree{
+    font-size: 12px;
+    color: #00000099;
+    text-align: center;
+    padding: 0px 8px 16px 8px;
+    border-bottom: 1px solid #00000017;
+}
+.main .profile-box .profile-view{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 12px;
+    margin-top: 12px;
+    font-size: 12px;
+    color: #00000099;
+    text-decoration: none;
+}
+.main .profile-box .profile-view:hover, .main .profile-box .profile-connect:hover, .main .profile-box .profile-try-premium:hover, .main .profile-box .profile-items:hover{
+    background-color: #00000014;
+}
+.main .profile-box .profile-view span, .main .profile-box .profile-connect > span{
+    font-weight: 600;
+    color: #0a66c2;
+}
+.main .profile-box .profile-connect{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 4px 12px;
+    font-size: 12px;
+    text-decoration: none;
+}
+.main .profile-box .profile-connect div{
+    display: flex;
+    flex-direction: column;
+    color: #000000e6;
+    font-weight: 600;
+}
+.main .profile-box .profile-connect div span{
+    color: #00000099;
+    font-weight: 400;
+}
+.main .profile-box .profile-try-premium{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 12px;
+    border-top: 1px solid #00000017;
+    margin-top: 12px;
+}
+.main .profile-box .profile-try-premium{
+    color: #00000099;
+}
+.main .profile-box .profile-try-premium div{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.main .profile-box .profile-try-premium div img {
+    width: 12px;
+    height: 12px;
+}
+.main .profile-box .profile-try-premium div span{
+    font-weight: 600;
+    text-decoration: underline;
+    color: #000000e6;
+}
+.main .profile-box .profile-try-premium:hover div span{
+    color: #0a66c2;
+}
+.main .profile-box .profile-items{
+    font-size: 12px;
+    padding: 12px;
+    border-top: 1px solid #00000017;
+    display: flex;
+    align-items: center;
+    color: #000000e6;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.main .community-panel{
+    padding-top: 8px;
+    background-color: #fff;
+    border-radius: 12px;
+    border: 1px solid #00000017;
+    margin-bottom: 50px;
+}
+.main .community-panel #accordion .card:last-child{
+    border-radius: 12px;
+}
+.main .community-panel .card:last-child .card-header{
+    border-radius: 0px 0px 12px 12px;
+}
+.main .community-panel .card{
+    font-size: 12px;
+    border-radius: 0px;
+    border: none;
+    border-radius: 12px;
+}
+.main .community-panel .card .card-header{
+    background-color: #fff;
+    padding: 0px 12px;
+    border: none;
+}
+.main .community-panel .card .card-header .card-link{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    color: #0a66c2;
+    font-weight: 600;
+}
+.main .community-panel .card .card-header .card-link:hover span{
+    text-decoration: underline;
+}
+.main .community-panel .card .card-header .card-link:hover i{
+    display: flex;
+    visibility: visible;
+}
+.main .community-panel .card .card-header .card-link i{
+    display: flex;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    color: #00000099;
+}
+.main .community-panel .card .card-header .card-link i.fa-plus{
+    visibility: visible;
+}
+.main .community-panel .card .card-header .card-link i:hover{
+    background-color: #00000014;
+}
+.main .community-panel .card .card-header .card-link.collapsed i{
+    transform: rotate(180deg);
+}
+.main .community-panel .btn-discover-more{
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    color: #00000099;
+    border-radius: 0px 0px 12px 12px;
+    transition: 0.2s;
+    border-top: 1px solid #00000017;
+    margin-top: 4px;
+}
+.main .community-panel .btn-discover-more:hover{
+    background-color: #00000014;
+}
+.main .community-panel .card .card-body{
+    padding: 4px 0px;
+}
+.main .community-panel .card .card-body .community-interest{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: #00000099;
+    padding: 4px 12px;
+    transition: 0.2s;
+    font-weight: 600;
+}
+.main .community-panel .card .card-body .community-interest span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.main .community-panel .card .card-body .community-interest:hover{
+    text-decoration: none;
+    background-color: #00000014;
+    color: #000000e6;
+}
+.main .community-panel .card .card-body .community-interest i{
+    width: 15px;
+    text-align: center;
+}
+
+.main .start-post{
+    border: 1px solid #00000017;
+    border-radius: 12px;
+    background-color: #fff;
+}
+.main .start-post .post-header{
+    display: flex;
+    align-items: center;
+    margin: 8px 16px 0px 16px;
+}
+.main .start-post .post-header .profile-img{
+    margin-right: 8px;
+}
+.main .start-post .post-header .profile-img img{
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+}
+.main .start-post .post-header .btn-start-post{
+    width: 100%;
+    height: 48px;
+    border-radius: 35px;
+    border: 1px solid #0000004d;
+    display: flex;
+    align-items: center;
+    padding: 10px 8px 10px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #00000099;
+    text-decoration: none;
+    margin: 4px 0px;
+    transition: 0.2s;
+}
+.main .start-post .post-header .btn-start-post:hover, .main .start-post .post-body .share-btn:hover{
+    background-color: #00000014;
+}
+
+.main .start-post .post-body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 4px;
+}
+.main .start-post .post-body .share-btn{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0px 8px;
+    font-size: 14px;
+    color: #00000099;
+    height: 48px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+.main .start-post .post-body .share-btn i{
+    font-size: 20px;
+}
+.main .start-post .post-body .share-btn .fa-image{
+    color: #378fe9;
+}
+.main .start-post .post-body .share-btn .fa-youtube{
+    color: #5f9b41;
+}
+.main .start-post .post-body .share-btn .fa-calendar{
+    color: #c37d16;
+}
+.main .start-post .post-body .share-btn .fa-indent{
+    color: #e16745;
+}
+
+.main .sort-by{
+    margin: 6px 0px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+}
+.main .sort-by .line{
+    width: 100%;
+    height: 1px;
+    background-color: #00000014;
+}
+.main .sort-by .dropdown{
+    background-color: #f3f2ef;
+}
+.main .sort-by .dropdown button{
+    font-size: 12px;
+}
+.main .sort-by .dropdown .dropdown-toggle{
+    padding: 0px 2px 0px 6px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.main .sort-by .dropdown .dropdown-toggle::after{
+    display: none;
+}
+.main .sort-by .dropdown .dropdown-menu{
+    right: 0;
+}
+.main .sort-by .dropdown .dropdown-toggle:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.main .shared-post{
+    background-color: #fff;
+    border-radius: 12px;
+    border: 1px solid #00000017;
+}
+.main .shared-post .shared-header{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 12px 40px 8px 16px;
+}
+.main .shared-post .shared-header .sharers-img{
+    margin-right: 12px;
+}
+.main .shared-post .shared-header .sharers-img img{
+    width: 48px;
+    height: 48px;
+}
+.main .shared-post .shared-header .sharers-info{
+    width: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    color: #00000099;
+    font-size: 12px;
+}
+.main .shared-post .shared-header .sharers-info .sharers-name{
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000e6;
+}
+.main .shared-post .shared-header .sharers-info .sharers-name:hover{
+    text-decoration: underline;
+    color: #0a66c2;
+}
+.main .shared-post .shared-header .sharers-info .shared-date{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.main .shared-post .shared-header .sharers-info .shared-date i.circle{
+    font-size: 3px;
+    position: relative;
+}
+.main .shared-post .shared-header .sharers-info .shared-date i.fa-earth-americas{
+    font-size: 14px;
+}
+.main .shared-post .shared-header .sharing-more{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    padding: 5px;
+    width: 32px;
+    height: 32px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00000099;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.main .shared-post .shared-header .sharing-more:hover{
+    background-color: #00000014;
+}
+.main .shared-post .shared-content{
+    margin-top: 4px;
+    height: 100%;
+    display: block;
+}
+.main .shared-post .shared-content img{
+    width: 100%;
+    height: auto;
+}
+.main .shared-post .shared-footer .shared-detail{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 16px;
+    padding: 8px 0px;
+    font-size: 12px;
+    border-bottom: 1px solid #00000014;
+}
+.main .shared-post .shared-footer .shared-detail .counts-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.main .shared-post .shared-footer .shared-detail .counts-left i{
+    width: 16px;
+    height: 16px;
+    padding: 2px;
+    border-radius: 16px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -5px;
+    color: #000;
+}
+.main .shared-post .shared-footer .shared-detail .counts-left i:first-child{
+    margin-left: 0px;
+}
+.main .shared-post .shared-footer .shared-detail .counts-left i.fa-flip-horizontal{
+    background-color: #28a745;
+    z-index: 0;
+}
+.main .shared-post .shared-footer .shared-detail .counts-left i.fa-face-smile{
+    background-color: #007bff;
+    z-index: 1;
+}
+.main .shared-post .shared-footer .shared-detail .counts-left i.fa-heart{
+    background-color: #dc3545;
+    z-index: 2;
+}
+.main .shared-post .shared-footer .shared-detail .counts-left span{
+    margin-left: 4px;
+    font-size: 12px;
+    color: #00000099;
+}
+.main .shared-post .shared-footer .shared-detail .counts-left:hover span, .main .shared-post .shared-footer .shared-detail .counts-right a:hover{
+    color: #0a66c2;
+}
+.main .shared-post .shared-footer .shared-detail .counts-left span:hover{
+    text-decoration: underline;
+}
+.main .shared-post .shared-footer .shared-detail .counts-right{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.main .shared-post .shared-footer .shared-detail .counts-right a{
+    color: #00000099;
+}
+.main .shared-post .shared-footer .shared-detail .counts-right i{
+    font-size: 3px;
+}
+.main .shared-post .shared-footer .shared-actions{
+    display: flex;
+    padding: 4px 12px;
+    justify-content: space-around;
+}
+.main .shared-post .shared-footer .shared-actions a{
+    font-size: 14px;
+    color: #00000099;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 48px;
+    text-decoration: none;
+    padding: 10px 8px;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+.main .shared-post .shared-footer .shared-actions a:hover{
+    background-color: #00000014;
+}
+.main .shared-post .shared-footer .shared-actions a i{
+    font-size: 20px;
+}
+.main .shared-post .shared-footer .shared-actions a span{
+    white-space: nowrap;
+}
+
+.main .follow{
+    border: 1px solid #00000014;
+    background-color: #fff;
+    border-radius: 12px;
+}
+.main .follow .follow-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+}
+.main .follow .follow-header .follow-title{
+    font-weight: 600;
+    font-size: 16px;
+}
+.main .follow .follow-header i{
+    font-size: 14px;
+}
+.main .follow .follow-header > a{
+    color: #00000099;
+}
+.main .follow .follow-content{
+    margin-top: 8px;
+}
+.main .follow .follow-content .follow-person{
+    margin: 12px 0px;
+    display: flex;
+    padding: 0px 12px;
+}
+.main .follow .follow-content .follow-person > a{
+    margin-right: 12px;
+}
+.main .follow .follow-content .follow-person a img{
+    width: 48px;
+    height: 48px;
+}
+.main .follow .follow-content .follow-person .follow-person-content a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+.main .follow .follow-content .follow-person .follow-person-content .person-name{
+    font-size: 14px;
+    color: #000000e6;
+    font-weight: 600;
+}
+.main .follow .follow-content .follow-person .follow-person-content .person-title{
+    font-size: 12px;
+    color: #00000099;
+}
+.main .follow .follow-content .follow-person .follow-person-content .follow-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #00000099;
+    border-radius: 32px;
+    color: #00000099;
+    margin-top: 6px;
+    padding: 6px 16px;
+    height: 32px;
+    transition: 0.2s;
+}
+.main .follow .follow-content .follow-person .follow-person-content .follow-btn:hover{
+    background-color: #00000014;    
+}
+.main .follow .follow-footer{
+    padding: 0px 12px 12px 12px;
+}
+.main .follow .follow-footer > a{
+    display: inline-block;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    padding: 2px 8px;
+    color: #00000099;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+.main .follow .follow-footer > a:hover{
+    background-color: #00000014;
+}
+
+.main .footer{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+    font-size: 12px;
+    margin: 16px 24px;
+    padding-left: 0px;
+}
+.main .footer li a{
+    color: #00000099;
+}
+.main .footer li a:hover{
+    color: #0a66c2;
+}
+.main .copyright{
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    font-size: 12px;
+    color: #00000099;
+    margin-bottom: 20px;
+}

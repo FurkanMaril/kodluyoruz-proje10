@@ -1,0 +1,40 @@
+@media screen and (min-width: 320px) {
+    header .navbar .nav-left{
+        margin: 4px 0px;
+    }
+    .main .shared-post .shared-footer .shared-actions a span, .main .start-post .post-body .share-btn span{
+        display: none;
+    }
+    .main .community-panel{
+        margin-bottom: 12px;
+    }
+    .main .follow{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 426px) {
+
+}
+
+@media screen and (min-width: 768px) {
+    .main .shared-post .shared-footer .shared-actions a span, .main .start-post .post-body .share-btn span{
+        display: block;
+    }
+    .main .community-panel{
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header .navbar .nav-left{
+        margin: 0px;
+    }
+    .main .follow{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+}
